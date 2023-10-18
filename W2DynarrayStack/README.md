@@ -1,0 +1,1 @@
+link to the presentation: https://docs.google.com/presentation/d/1XGQyfIJVJV1XUpAHTbIwa4CRH3h13RnR/edit?usp=sharing&ouid=111146045625009604297&rtpof=true&sd=true
