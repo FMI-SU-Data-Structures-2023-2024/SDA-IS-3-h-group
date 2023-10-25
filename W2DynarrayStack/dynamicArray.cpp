@@ -1,106 +1,64 @@
 #include <iostream>
-#include <cstdlib>
-#include <vector>
+#include <cassert>
 
-template <typename T>
-class DynamicArray
-{
+using namespace std;
+
+class DynamicArray {
 private:
-    T* data;
-    std::size_t sz;
-    std::size_t capacity;
-
-    static const std::size_t REALLOC_STEP = 2;
-
+    int* arr;
+    int size;
+    int cap;
 public:
-    DynamicArray() : data(nullptr), sz(0), capacity(0) {}
-    DynamicArray(const DynamicArray &other) {
-        copy(other);
+    DynamicArray() {
+        size = 0;
+        cap = 4;
+        arr = new int[cap];
     }
-
-    DynamicArray& operator= (const DynamicArray &other) {
-        if (this != &other) {
-            free();
-            copy(other);
-        }
-
-        return *this;
-    }
-
+    
+    DynamicArray(const DynamicArray& other) = delete;
+    
+    DynamicArray& operator=(const DynamicArray& other) = delete;
+    
     ~DynamicArray() {
-        free();
+        delete[] arr;
+        arr = nullptr;
     }
-
-    void push_back(const T &elem) {
-       if (sz == capacity) {
-            reserve(capacity == 0 ? 1 : capacity * REALLOC_STEP);
-       }
-
-       data[sz] = elem;
-       ++sz;
+    
+    int getAt(int index)
+    {
+        return arr[index];
     }
-
-    void pop_back() {
-        --sz;
-    }
-
-    std::size_t size() const {
-        return sz;
-    }
-
-    T& operator[] (std::size_t idx) {
-        return data[idx];
-    }
-
-    const T& operator[] (std::size_t idx) const {
-        return data[idx];
-    }
-
-private:
-    void free() {
-        delete[] data;
-        data = nullptr;
-        sz = 0;
-        capacity = 0;
-    }
-
-    void copy(const DynamicArray &other) {
-        if (other.capacity == 0) {
-            *this = DynamicArray();
-
-            return;
+    
+    void push_back(int newElement)
+    {
+        if (size >= cap)
+        {
+            resize(cap*2);
         }
-
-        data = new T[other.capacity];
-        capacity = other.capacity;
-        for (sz = 0; sz < other.sz; ++sz) {
-            data[sz] = other[sz];
-        }
+        arr[size++] = newElement;
     }
-
-    void reserve(std::size_t n) {
-        T* buffer = new T[n];
-
-        for (std::size_t i = 0; i < sz; ++i) {
-            buffer[i] = data[i];
+    
+    void resize(int newCap)
+    {
+        int* temp = new int[newCap];
+        for(int i = 0; i < size; ++size)
+        {
+            temp[i] = arr[i];
         }
-
-        delete[] data;
-        data = buffer;
-        capacity = n;
+        
+        delete[] arr;
+        arr = temp;
+        cap = newCap;
     }
-
 };
 
-int main() {
-    DynamicArray<int> v;
-    
-    for (int i = 0; i < 100; ++i) {
-        v.push_back(i);
-    }
-
-    for (int i = 0; i < v.size(); ++i) {
-        std::cout<< v[i]<< " ";
+int main()
+{
+    DynamicArray d;
+    for(int i=0; i< 100000; ++i)
+    {
+        d.push_back(i);
+        std::cout<< d.getAt(i)<< " ";
     }
 
     return 0;
