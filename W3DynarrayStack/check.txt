@@ -1,0 +1,5 @@
+- size_t vs unsigned
+- insert after end (with iterator)
+- can we use vector and string
+- merging sorted arrays
+- iterator access to creation

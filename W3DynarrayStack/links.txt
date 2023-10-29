@@ -1,0 +1,5 @@
+https://github.com/FMI-SU-Data-Structures-2023-2024/SDA-IS-3-h-group/tree/main
+https://docs.google.com/presentation/d/1p2GwCaRVBMsrW6Ry8jHzR-K1W6PlqQxY/edit?usp=sharing&ouid=111146045625009604297
+
+problems:
+https://github.com/FMI-SU-Data-Structures-2023-2024/week02-queue
