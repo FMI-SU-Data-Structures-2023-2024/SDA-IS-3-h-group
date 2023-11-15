@@ -21,6 +21,17 @@ private:
 public:
     LinkedList() : head(nullptr) {}
 
+    LinkedList(const LinkedList&) = delete;
+    LinkedList& operator=(const LinkedList&) = delete;
+
+    ~LinkedList() {
+        while (head) {
+            Node* temp = head;
+            head = head->next;
+            delete temp;
+        }
+    }
+
     void add(T item) {
         Node* node = new Node(item);
         if (!head) {
