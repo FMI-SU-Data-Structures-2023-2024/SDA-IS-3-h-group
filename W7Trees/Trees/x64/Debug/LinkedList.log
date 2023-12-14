@@ -1,0 +1,73 @@
+﻿  main.cpp
+C:\Users\grade\Desktop\current\SDA-IS-3-h-group\W7Trees\Trees\main.cpp(20,14): error C2672: 'print': no matching overloaded function found
+C:\Users\grade\Desktop\current\SDA-IS-3-h-group\W7Trees\Trees\main.cpp(15,6): message : could be 'void print(Node<T> *)'
+C:\Users\grade\Desktop\current\SDA-IS-3-h-group\W7Trees\Trees\main.cpp(20,14): message : 'void print(Node<T> *)': could not deduce template argument for 'Node<T> *' from 'Node *'
+C:\Users\grade\Desktop\current\SDA-IS-3-h-group\W7Trees\Trees\main.cpp(20,14): message : 'print': function declaration must be available as none of the arguments depend on a template parameter
+C:\Users\grade\Desktop\current\SDA-IS-3-h-group\W7Trees\Trees\main.cpp(27,19): error C2665: 'std::vector<Node<int> *,std::allocator<Node<int> *>>::push_back': no overloaded function could convert all the argument types
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\include\vector(876,23): message : could be 'void std::vector<Node<int> *,std::allocator<Node<int> *>>::push_back(_Ty &&)'
+          with
+          [
+              _Ty=Node<int> *
+          ]
+C:\Users\grade\Desktop\current\SDA-IS-3-h-group\W7Trees\Trees\main.cpp(27,19): message : 'void std::vector<Node<int> *,std::allocator<Node<int> *>>::push_back(_Ty &&)': cannot convert argument 1 from 'int' to '_Ty &&'
+          with
+          [
+              _Ty=Node<int> *
+          ]
+C:\Users\grade\Desktop\current\SDA-IS-3-h-group\W7Trees\Trees\main.cpp(27,30): message : Reason: cannot convert from 'int' to '_Ty'
+          with
+          [
+              _Ty=Node<int> *
+          ]
+C:\Users\grade\Desktop\current\SDA-IS-3-h-group\W7Trees\Trees\main.cpp(27,30): message : Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\include\vector(872,23): message : or       'void std::vector<Node<int> *,std::allocator<Node<int> *>>::push_back(const _Ty &)'
+          with
+          [
+              _Ty=Node<int> *
+          ]
+C:\Users\grade\Desktop\current\SDA-IS-3-h-group\W7Trees\Trees\main.cpp(27,19): message : 'void std::vector<Node<int> *,std::allocator<Node<int> *>>::push_back(const _Ty &)': cannot convert argument 1 from 'int' to 'const _Ty &'
+          with
+          [
+              _Ty=Node<int> *
+          ]
+C:\Users\grade\Desktop\current\SDA-IS-3-h-group\W7Trees\Trees\main.cpp(27,30): message : Reason: cannot convert from 'int' to 'const _Ty'
+          with
+          [
+              _Ty=Node<int> *
+          ]
+C:\Users\grade\Desktop\current\SDA-IS-3-h-group\W7Trees\Trees\main.cpp(27,30): message : Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Users\grade\Desktop\current\SDA-IS-3-h-group\W7Trees\Trees\main.cpp(27,19): message : while trying to match the argument list '(int)'
+C:\Users\grade\Desktop\current\SDA-IS-3-h-group\W7Trees\Trees\main.cpp(28,19): error C2665: 'std::vector<Node<int> *,std::allocator<Node<int> *>>::push_back': no overloaded function could convert all the argument types
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\include\vector(876,23): message : could be 'void std::vector<Node<int> *,std::allocator<Node<int> *>>::push_back(_Ty &&)'
+          with
+          [
+              _Ty=Node<int> *
+          ]
+C:\Users\grade\Desktop\current\SDA-IS-3-h-group\W7Trees\Trees\main.cpp(28,19): message : 'void std::vector<Node<int> *,std::allocator<Node<int> *>>::push_back(_Ty &&)': cannot convert argument 1 from 'int' to '_Ty &&'
+          with
+          [
+              _Ty=Node<int> *
+          ]
+C:\Users\grade\Desktop\current\SDA-IS-3-h-group\W7Trees\Trees\main.cpp(28,30): message : Reason: cannot convert from 'int' to '_Ty'
+          with
+          [
+              _Ty=Node<int> *
+          ]
+C:\Users\grade\Desktop\current\SDA-IS-3-h-group\W7Trees\Trees\main.cpp(28,30): message : Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\include\vector(872,23): message : or       'void std::vector<Node<int> *,std::allocator<Node<int> *>>::push_back(const _Ty &)'
+          with
+          [
+              _Ty=Node<int> *
+          ]
+C:\Users\grade\Desktop\current\SDA-IS-3-h-group\W7Trees\Trees\main.cpp(28,19): message : 'void std::vector<Node<int> *,std::allocator<Node<int> *>>::push_back(const _Ty &)': cannot convert argument 1 from 'int' to 'const _Ty &'
+          with
+          [
+              _Ty=Node<int> *
+          ]
+C:\Users\grade\Desktop\current\SDA-IS-3-h-group\W7Trees\Trees\main.cpp(28,30): message : Reason: cannot convert from 'int' to 'const _Ty'
+          with
+          [
+              _Ty=Node<int> *
+          ]
+C:\Users\grade\Desktop\current\SDA-IS-3-h-group\W7Trees\Trees\main.cpp(28,30): message : Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Users\grade\Desktop\current\SDA-IS-3-h-group\W7Trees\Trees\main.cpp(28,19): message : while trying to match the argument list '(int)'
