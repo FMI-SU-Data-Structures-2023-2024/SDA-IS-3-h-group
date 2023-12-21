@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\dimit\OneDrive\Desktop\fmi\SDA-IS-3-h-group\W9BST\BinarySearchTree\main.cpp(40): warning C4715: 'BST::search': not all control paths return a value
+  BinarySearchTree.vcxproj -> C:\Users\dimit\OneDrive\Desktop\fmi\SDA-IS-3-h-group\W9BST\BinarySearchTree\x64\Debug\BinarySearchTree.exe

@@ -1,0 +1,6 @@
+﻿  main.cpp
+C:\Users\dimit\OneDrive\Desktop\fmi\SDA-IS-3-h-group\W10Heap\Week9Project\minHeap.h(75,1): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\dimit\OneDrive\Desktop\fmi\SDA-IS-3-h-group\W10Heap\Week9Project\minHeap.h(74): message : while compiling class template member function 'int MinHeap<int>::size(void)'
+C:\Users\dimit\OneDrive\Desktop\fmi\SDA-IS-3-h-group\W10Heap\Week9Project\minHeap.h(96): message : see reference to function template instantiation 'int MinHeap<int>::size(void)' being compiled
+C:\Users\dimit\OneDrive\Desktop\fmi\SDA-IS-3-h-group\W10Heap\Week9Project\main.cpp(9): message : see reference to class template instantiation 'MinHeap<int>' being compiled
+  Week9Project.vcxproj -> C:\Users\dimit\OneDrive\Desktop\fmi\SDA-IS-3-h-group\W10Heap\x64\Debug\Week9Project.exe
